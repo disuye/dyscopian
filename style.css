@@ -1,5 +1,9 @@
 body * {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2.0rem;
+    font-size: 1.3rem;
     color: black;
+}
+
+span {
+    padding-bottom: 2.0rem;
 }

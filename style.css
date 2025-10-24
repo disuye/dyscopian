@@ -26,6 +26,10 @@ a::after {
     animation: blinkCursor 0.5s infinite;
 }
 
+* {
+        transition: all 0.3s ease-in-out;
+}
+
 @-webkit-keyframes blinkCursor {
     0% { opacity: 1; }
     25% { opacity: 0; }

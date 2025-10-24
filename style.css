@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&display=swap');
 
 body {
     background: url('../blur.png') fixed top center no-repeat black;
     background-size: 100% 300px;
-    font-family: "Unica One", sans-serif;
+    font-family: "Barlow", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;;
     font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-weight: 300;
+    font-size: 1.2rem;
     line-height: 0.5rem;
     color: white;
 }
@@ -26,8 +29,8 @@ a::after {
     animation: blinkCursor 0.5s infinite;
 }
 
-* {
-        transition: all 0.3s ease-in-out;
+*:not(h1) {
+    transition: all 0.3s ease-in-out;
 }
 
 @-webkit-keyframes blinkCursor {
@@ -60,6 +63,7 @@ a:hover {
 }
 
 h1 {
+    font-family: "Unica One", sans-serif;
     font-weight: normal;
     font-size: 12vw;
     letter-spacing: -1vw;

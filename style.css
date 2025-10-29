@@ -87,7 +87,7 @@ display: inline-block;
 .glitch::before, 
 .glitch::after {
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: steps(2);
   animation-direction: alternate-reverse;
   overflow: hidden;
   position: absolute;
@@ -102,7 +102,7 @@ display: inline-block;
   animation-duration: 1.9s;
   left: 2px;
   background: var(--glitch-bg-color);
-  text-shadow: red 2px 0 10px;
+  text-shadow: rgb(255, 0, 115) 0 0 2px;
 }
 
 .glitch::before {
@@ -110,7 +110,7 @@ display: inline-block;
   animation-duration: 1.5s;
   left: -2px;
   background: var(--glitch-bg-color);
-    text-shadow: cyan -2px 0 10px;
+    text-shadow: rgb(45, 255, 255) -2px 0 10px;
 }
 
 @keyframes glitch-animation {

@@ -18,30 +18,24 @@ body {
     font-weight: 300;
     font-size: 1.0rem;
     color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .background {
-  background: url('../floor.jpg') center center repeat;
-  width: 100%;
-  height: 200%;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: block;
-  position: fixed;
   z-index: -1;
-  opacity: 0.5;
-  mix-blend-mode: overlay;
-  animation-name: scan-animation;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: normal;
-  animation-duration: 120s;
-}
-
-@keyframes scan-animation {
-  0% {top: 0%;}
-  100% {top: 100%;}
+  background: url('../smoke.jpg') center center no-repeat;
+  background-size: cover;
 }
 
 *:not(h1):not(.glitch::after):not(.glitch::before) {
@@ -71,6 +65,10 @@ body {
     font-size: var(--h1-font-size);
     letter-spacing: -1vw;
     transform: translate(0%, 10vw);
+      position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 a {

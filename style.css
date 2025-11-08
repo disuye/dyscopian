@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 :root {
   --bg-color: transparent;
@@ -60,15 +62,39 @@ body {
 }
 
 .title {
+    display: block;
     font-family: "Unica One", sans-serif;
     font-weight: normal;
     font-size: var(--h1-font-size);
     letter-spacing: -1vw;
     transform: translate(0%, 10vw);
-      position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle {
+  font-size: 20%;
+  letter-spacing: 0.2rem;
+  word-break: keep-all;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.japanese,
+.chinese {
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.japanese {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.chinese {
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 a {
